@@ -2,6 +2,7 @@
 
 import 'dart:convert';
 import 'package:cybersafe_mx/models/models.dart';
+import 'package:cybersafe_mx/pages/videoPage.dart';
 import 'package:cybersafe_mx/utils/courseBtn_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -47,7 +48,15 @@ class _CoursesPageState extends State<CoursesPage> {
           print(buttonData[index].text);
           return CourseButton(
             text: buttonData[index].text,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => VideoPlayer(
+                          videoURL: buttonData[index].action,
+                        )),
+              );
+            },
           );
         },
       ),

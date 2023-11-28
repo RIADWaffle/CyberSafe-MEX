@@ -4,7 +4,6 @@ import 'package:cybersafe_mx/pages/courses_page.dart';
 import 'package:cybersafe_mx/pages/help_page.dart';
 import 'package:cybersafe_mx/pages/news_page.dart';
 import 'package:cybersafe_mx/pages/profile_page.dart';
-import 'package:cybersafe_mx/pages/videoPage.dart';
 import 'package:flutter/material.dart';
 
 class BottomMenu extends StatefulWidget {
@@ -34,7 +33,7 @@ class _BottomMenuState extends State<BottomMenu> {
     // ayuda
     HelpPage(),
     // perfil
-    VideoPlayer(),
+    ProfilePage(),
   ];
 
   @override
