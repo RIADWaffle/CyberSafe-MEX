@@ -4,7 +4,12 @@ import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class VideoPlayer extends StatefulWidget {
   final String videoURL;
-  const VideoPlayer({super.key, required this.videoURL});
+  final String title;
+  const VideoPlayer({
+    super.key,
+    required this.videoURL,
+    required this.title,
+  });
 
   @override
   State<VideoPlayer> createState() => _VideoPlayerState();
@@ -31,6 +36,11 @@ class _VideoPlayerState extends State<VideoPlayer> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text(
+          widget.title,
+          style: TextStyle(
+              color: Colors.white), // Establecer el color del texto en blanco
+        ),
         backgroundColor: const Color(0xFF4548E6),
       ),
       body: Column(children: [

@@ -53,6 +53,7 @@ class _CoursesPageState extends State<CoursesPage> {
                 context,
                 MaterialPageRoute(
                     builder: (context) => VideoPlayer(
+                      title: buttonData[index].text,
                           videoURL: buttonData[index].action,
                         )),
               );
