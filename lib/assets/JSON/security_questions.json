@@ -2,7 +2,7 @@
   {
     "idSession": 1,
     "finished": 0,
-    "session": "Escenario de Phishing",
+    "sessionTitle": "Escenario de Phishing",
     "questions": [
       {
         "sessionId": 1,
@@ -112,7 +112,7 @@
   {
     "id": 2,
     "finished": 0,
-    "session": "Estafas Online",
+    "sessionTitle": "Estafas Online",
     "questions": [
       {
         "sessionId": 2,
@@ -210,7 +210,7 @@
   {
     "id": 3,
     "finished": 0,
-    "session": "Identidad Personal",
+    "sessionTitle": "Identidad Personal",
     "questions": [
       {
         "sessionId": 3,
@@ -317,7 +317,7 @@
   {
     "id": 4,
     "finished": 0,
-    "session": "Importancia de contraseñas fuertes",
+    "sessionTitle": "Importancia de contraseñas fuertes",
     "questions": [
       {
         "sessionId": 4,
@@ -424,7 +424,7 @@
   {
     "id": 5,
     "finished": 0,
-    "session": "Actualizacion regular del software",
+    "sessionTitle": "Actualizacion regular del software",
     "questions": [
       {
         "sessionId": 5,
@@ -531,7 +531,7 @@
   {
     "id": 6,
     "finished": 0,
-    "session": "Medidas adicionales de seguridad",
+    "sessionTitle": "Medidas adicionales de seguridad",
     "questions": [
       {
         "sessionId": 6,
