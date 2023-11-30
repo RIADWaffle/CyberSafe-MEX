@@ -15,14 +15,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
   @override
   Widget build(BuildContext context) {
-    int counter = 0;
-    for (var section in db.sections) {
-      if (section[2] == 1) {
-        counter++;
-      }
-    }
-    db.sectionsCompleted = counter;
-
+    
     if (db.sectionsCompleted > 1) {
       return Scaffold(
         body: Center(

@@ -31,16 +31,8 @@ class CoursesDataBase {
 
   // update the database
   void updateDataBase() {
-    print(sections);
     _sectionsBox.put("sectionsList", sections);
-    int counter = 0;
-    for (var section in sections) {
-      if(section[2] == 1){
-        counter++;
-      }
-    }
-    sectionsCompleted = counter;
-    print(sections);
+    sectionsCompleted = sections.where((section) => section[2] == 1).length;
   }
 
   // run this method if this is the 1st time ever opening this app

@@ -34,7 +34,9 @@ class _QuizzPageState extends State<QuizzPage> {
         .toList();
     selectedOptions = List.filled(questionsTmp.length, null);
 
-    //print('$questionsTmp,   $selectedOptions');
+    for(var answer in questionsTmp){
+      print(answer[3]);
+    }
     super.initState();
   }
 
@@ -92,7 +94,7 @@ class _QuizzPageState extends State<QuizzPage> {
                 );
               }
                   Navigator.of(context).pop();
-              if(db.sectionsCompleted==db.sections.length){
+              if(db.sectionsCompleted>=db.sections.length){
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
@@ -144,6 +146,7 @@ class _QuizzPageState extends State<QuizzPage> {
               } else {
                 calculateGrade();
               }
+              db.updateDataBase();
             },
             child: const Text('Submit'),
           ),
