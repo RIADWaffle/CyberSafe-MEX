@@ -7,6 +7,8 @@ class CoursesDataBase {
   List sections = [];
   List questions = [];
 
+  int sectionsCompleted = 0;
+
   // reference our box
   final _sectionsBox = Hive.box('sectionsBox');
   final _questionsBox = Hive.box('questionsBox');
@@ -16,22 +18,41 @@ class CoursesDataBase {
   void loadData() {
     sections = _sectionsBox.get("sectionsList");
     questions = _questionsBox.get("questionList");
+
+    int counter = 0;
+    for (var section in sections) {
+      if(section[2] == 1){
+        counter++;
+      }
+    }
+    sectionsCompleted = counter;
+    
   }
 
   // update the database
   void updateDataBase() {
+    print(sections);
     _sectionsBox.put("sectionsList", sections);
+    int counter = 0;
+    for (var section in sections) {
+      if(section[2] == 1){
+        counter++;
+      }
+    }
+    sectionsCompleted = counter;
+    print(sections);
   }
 
   // run this method if this is the 1st time ever opening this app
   void createInitialData() async {
+
     sections = [
-      [1, "Escenario de Phishing"],
-      [2, "Estafas Online"],
-      [3, "Identidad Personal"],
-      [4, "Importancia de contraseñas fuertes"],
-      [5, "Actualizacion regular del software"],
-      [6, "Medidas adicionales de seguridad"]
+      [1, "Escenario de Phishing", 0],
+      [2, "Estafas Online", 0],
+      [3, "Identidad Personal", 0],
+      [4, "Importancia de contraseñas fuertes", 0],
+      [5, "Actualizacion regular del software", 0],
+      [6, "Medidas adicionales de seguridad", 0]
     ];
 
     questions = [
@@ -629,30 +650,10 @@ class CoursesDataBase {
         ],
         0
       ],
-      [
-        6,
-        "¿Por qué es importante educarse y aumentar la conciencia sobre la ingeniería social?",
-        [
-          "Para reconocer y evitar tácticas de estafadores y protegerse contra ataques.",
-          "Para ganar premios y regalos en línea.",
-          "Para navegar por Internet de manera más eficiente."
-        ],
-        0
-      ],
-      [
-        6,
-        "¿Qué medidas adicionales de seguridad son esenciales para la navegación segura en línea?",
-        [
-          "Utilizar conexiones seguras (HTTPS), evitar correos electrónicos sospechosos y cifrar datos sensibles.",
-          "Compartir datos personales en línea con amigos y familiares.",
-          "Descargar todos los archivos adjuntos de correos electrónicos."
-        ],
-        0
-      ]
     ];
     //await _fetchProducts();
 
-    print(questions);
+    //print(questions);
   }
 
   // Future<void> _fetchProducts() async {

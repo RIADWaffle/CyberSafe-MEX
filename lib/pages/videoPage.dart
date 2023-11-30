@@ -43,7 +43,7 @@ class _VideoPlayerState extends State<VideoPlayer> {
       appBar: AppBar(
         title: Text(
           widget.title,
-          style: TextStyle(
+          style: const TextStyle(
               color: Colors.white), // Establecer el color del texto en blanco
         ),
         backgroundColor: const Color(0xFF4548E6),
