@@ -1,12 +1,12 @@
 [
   {
-    "idSession": 1,
+    "id": 1,
     "finished": 0,
     "sessionTitle": "Escenario de Phishing",
     "questions": [
       {
         "sessionId": 1,
- "question": "¿Qué describe mejor al phishing?",
+        "question": "¿Qué describe mejor al phishing?",
         "options": [
           "Implica que actores maliciosos se hacen pasar por entidades de confianza para engañar a las personas",
           "Son empresas que te engañan para obtener tus datos vía Email.",
@@ -16,7 +16,7 @@
       },
       {
         "sessionId": 1,
- "question": "¿Cuáles son los peligros del phishing?",
+        "question": "¿Cuáles son los peligros del phishing?",
         "options": [
           "pérdida financiera",
           "robo de identidad",
@@ -27,7 +27,7 @@
       },
       {
         "sessionId": 1,
- "question": "¿Qué consejo es más efectivo para evitar caer en una estafa de phishing?",
+        "question": "¿Qué consejo es más efectivo para evitar caer en una estafa de phishing?",
         "options": [
           "Compartir contraseñas regularmente para mayor seguridad.",
           "Abrir cualquier correo electrónico que parezca importante sin verificar su origen.",
@@ -38,7 +38,7 @@
       },
       {
         "sessionId": 1,
- "question": "Son características de un email de phishing:",
+        "question": "Son características de un email de phishing:",
         "options": [
           "Saludos Genéricos y Solicitudes de Información Sensible",
           "Logotipo de las marca",
@@ -49,7 +49,7 @@
       },
       {
         "sessionId": 1,
- "question": "Es una forma de protegerse del phishing:",
+        "question": "Es una forma de protegerse del phishing:",
         "options": [
           "Verifica la dirección de correo recibido",
           "Cerrar mi cuenta de email",
@@ -59,7 +59,7 @@
       },
       {
         "sessionId": 1,
- "question": "¿Por qué es importante no hacer clic en enlaces sospechosos en correos electrónicos?",
+        "question": "¿Por qué es importante no hacer clic en enlaces sospechosos en correos electrónicos?",
         "options": [
           "Hacer clic en enlaces sospechosos suele llevar a descuentos y ofertas especiales.",
           "Hacer clic en enlaces sospechosos siempre es seguro, ya que los navegadores web modernos protegen contra cualquier amenaza.",
@@ -69,7 +69,7 @@
       },
       {
         "sessionId": 1,
- "question": "¿Cuál es uno de los métodos más comunes utilizados por los atacantes en ataques de phishing?",
+        "question": "¿Cuál es uno de los métodos más comunes utilizados por los atacantes en ataques de phishing?",
         "options": [
           "Suplantación de identidad de entidades de confianza",
           "Utilización de emojis en correos electrónicos para hacer que los mensajes parezcan más amigables.",
@@ -79,7 +79,7 @@
       },
       {
         "sessionId": 1,
- "question": "¿Qué se debe hacer si se recibe un correo electrónico sospechoso que parece ser de una entidad de confianza?",
+        "question": "¿Qué se debe hacer si se recibe un correo electrónico sospechoso que parece ser de una entidad de confianza?",
         "options": [
           "No hacer clic en ningún enlace ni proporcionar información sensible",
           "Hacer clic en el enlace para ver de qué se trata y luego decidir si es seguro o no.",
@@ -89,7 +89,7 @@
       },
       {
         "sessionId": 1,
- "question": "¿Qué tipo de información personal suelen buscar los atacantes en ataques de phishing?",
+        "question": "¿Qué tipo de información personal suelen buscar los atacantes en ataques de phishing?",
         "options": [
           "Contraseñas, números de tarjeta de crédito, información bancaria",
           "Nombres de las mascotas de los destinatarios.",
@@ -99,7 +99,7 @@
       },
       {
         "sessionId": 1,
- "question": "¿Cuál es una táctica comúnmente utilizada por los atacantes en el phishing para engañar a las personas?",
+        "question": "¿Cuál es una táctica comúnmente utilizada por los atacantes en el phishing para engañar a las personas?",
         "options": [
           "Utilizar un lenguaje y estilo de escritura muy formal en los correos electrónicos.",
           "Crear correos electrónicos y sitios web que se parecen mucho a los de entidades legítimas",
@@ -116,7 +116,7 @@
     "questions": [
       {
         "sessionId": 2,
- "question": "¿Qué describe mejor una estafa en internet?",
+        "question": "¿Qué describe mejor una estafa en internet?",
         "options": [
           "Un algoritmo matemático utilizado para cifrar mensajes secretos en la web oscura.",
           "Son fraudes en línea abarcan una amplia gama de engaños perpetrados en el ciberespacio con el objetivo de estafar a las personas.",
@@ -126,7 +126,7 @@
       },
       {
         "sessionId": 2,
- "question": "¿Cómo puedes detectar una estafa en internet?",
+        "question": "¿Cómo puedes detectar una estafa en internet?",
         "options": [
           "Ofertas Demasiadas Buenas para Ser Ciertas",
           "Solicitudes de Dinero o Información Personal",
@@ -137,7 +137,7 @@
       },
       {
         "sessionId": 2,
- "question": "¿En qué tipo de estafa en línea las víctimas pueden recibir correos electrónicos o mensajes afirmando que han ganado una lotería ficticia?",
+        "question": "¿En qué tipo de estafa en línea las víctimas pueden recibir correos electrónicos o mensajes afirmando que han ganado una lotería ficticia?",
         "options": [
           "Estafas de lotería.",
           "Estafas de jardinería en línea.",
@@ -147,7 +147,7 @@
       },
       {
         "sessionId": 2,
- "question": "¿Qué hacen los estafadores en las estafas románticas en línea?",
+        "question": "¿Qué hacen los estafadores en las estafas románticas en línea?",
         "options": [
           "Venden productos de belleza en línea.",
           "Crean perfiles falsos en sitios de citas o redes sociales y establecen relaciones sentimentales con las víctimas para luego pedir dinero.",
@@ -157,7 +157,7 @@
       },
       {
         "sessionId": 2,
- "question": "¿Por qué los estafadores a menudo presionan a las víctimas para tomar decisiones rápidas?",
+        "question": "¿Por qué los estafadores a menudo presionan a las víctimas para tomar decisiones rápidas?",
         "options": [
           "Para que las víctimas envíen dinero de inmediato o proporcionen información personal sin pensar.",
           "Para organizar reuniones en línea.",
@@ -167,7 +167,7 @@
       },
       {
         "sessionId": 2,
- "question": "¿Cuál de las siguientes acciones puede ayudar a protegerse de las estafas en línea?",
+        "question": "¿Cuál de las siguientes acciones puede ayudar a protegerse de las estafas en línea?",
         "options": [
           "Compartir información personal en línea de manera indiscriminada.",
           "Usar la misma contraseña para todas las cuentas en línea.",
@@ -177,7 +177,7 @@
       },
       {
         "sessionId": 2,
- "question": "¿Qué deben hacer las víctimas si creen que han sido estafadas en línea?",
+        "question": "¿Qué deben hacer las víctimas si creen que han sido estafadas en línea?",
         "options": [
           "Ignorar la estafa y esperar que se resuelva por sí sola.",
           "Denunciar la estafa a las autoridades y a las plataformas en las que se llevó a cabo.",
@@ -187,7 +187,7 @@
       },
       {
         "sessionId": 2,
- "question": "¿Por qué las estafas en línea son un problema persistente?",
+        "question": "¿Por qué las estafas en línea son un problema persistente?",
         "options": [
           "Porque los estafadores aprovechan la conectividad y la relativa anonimidad de Internet para engañar a las personas.",
           "Debido a la falta de interés en las ofertas en línea.",
@@ -197,7 +197,7 @@
       },
       {
         "sessionId": 2,
- "question": "¿Por qué las estafas en línea pueden ser particularmente crueles en comparación con otras estafas?",
+        "question": "¿Por qué las estafas en línea pueden ser particularmente crueles en comparación con otras estafas?",
         "options": [
           "Porque explotan las emociones de las víctimas al establecer relaciones sentimentales falsas.",
           "Porque siempre devuelven el dinero robado después de cometer la estafa.",
@@ -214,7 +214,7 @@
     "questions": [
       {
         "sessionId": 3,
- "question": "¿Qué tipo de información se considera datos personales?",
+        "question": "¿Qué tipo de información se considera datos personales?",
         "options": [
           "Fotos de vacaciones en familia.",
           "Números de seguridad social, contraseñas, datos bancarios y otra información privada",
@@ -224,7 +224,7 @@
       },
       {
         "sessionId": 3,
- "question": "¿Por qué es crítico proteger los datos personales en la era digital?",
+        "question": "¿Por qué es crítico proteger los datos personales en la era digital?",
         "options": [
           "Para prevenir el robo de identidad y otros delitos financieros.",
           "Para mantener la privacidad de las celebridades en línea.",
@@ -234,7 +234,7 @@
       },
       {
         "sessionId": 3,
- "question": "¿Qué riesgo representa el acceso no autorizado a datos bancarios o tarjetas de crédito?",
+        "question": "¿Qué riesgo representa el acceso no autorizado a datos bancarios o tarjetas de crédito?",
         "options": [
           "Beneficios financieros inesperados.",
           "Aumento de la calificación crediticia.",
@@ -244,7 +244,7 @@
       },
       {
         "sessionId": 3,
- "question": "¿Por qué es importante configurar ajustes de privacidad en línea?",
+        "question": "¿Por qué es importante configurar ajustes de privacidad en línea?",
         "options": [
           "Para controlar quién puede ver tu información.",
           "Para aumentar la visibilidad en línea.",
@@ -254,7 +254,7 @@
       },
       {
         "sessionId": 3,
- "question": "¿Qué es la autenticación de dos factores (2FA)?",
+        "question": "¿Qué es la autenticación de dos factores (2FA)?",
         "options": [
           "Una contraseña que se comparte públicamente.",
           "Un método adicional de seguridad que requiere una segunda forma de verificación.",
@@ -264,7 +264,7 @@
       },
       {
         "sessionId": 3,
- "question": "¿Por qué se debe evitar compartir la ubicación en tiempo real en redes sociales?",
+        "question": "¿Por qué se debe evitar compartir la ubicación en tiempo real en redes sociales?",
         "options": [
           "Puede poner en riesgo tu seguridad.",
           "Para mantener a tus amigos informados sobre tus actividades.",
@@ -274,7 +274,7 @@
       },
       {
         "sessionId": 3,
- "question": "¿Por qué es importante educar a los niños sobre los riesgos en línea?",
+        "question": "¿Por qué es importante educar a los niños sobre los riesgos en línea?",
         "options": [
           "Para que pasen más tiempo en línea.",
           "Para que compartan información personal en línea sin restricciones.",
@@ -284,7 +284,7 @@
       },
       {
         "sessionId": 3,
- "question": "¿Qué se debe hacer si recibes un mensaje de texto o correo electrónico sospechoso?",
+        "question": "¿Qué se debe hacer si recibes un mensaje de texto o correo electrónico sospechoso?",
         "options": [
           "Hacer clic en enlaces sin dudar.",
           "Descargar todos los archivos adjuntos sin verificar.",
@@ -294,7 +294,7 @@
       },
       {
         "sessionId": 3,
- "question": "¿Qué se recomienda hacer si crees que has sido víctima de robo de identidad?",
+        "question": "¿Qué se recomienda hacer si crees que has sido víctima de robo de identidad?",
         "options": [
           "Ignorar la situación y esperar a que se resuelva por sí sola.",
           "Informar a tus instituciones financieras y a las autoridades.",
@@ -304,7 +304,7 @@
       },
       {
         "sessionId": 3,
- "question": "¿Por qué es importante mantener registros de las comunicaciones relacionadas con el robo de identidad?",
+        "question": "¿Por qué es importante mantener registros de las comunicaciones relacionadas con el robo de identidad?",
         "options": [
           "Para ganar espacio en tu correo electrónico.",
           "Para aumentar la cantidad de correos electrónicos.",
@@ -321,7 +321,7 @@
     "questions": [
       {
         "sessionId": 4,
- "question": "¿Qué característica hace que una contraseña sea más segura?",
+        "question": "¿Qué característica hace que una contraseña sea más segura?",
         "options": [
           "Longitud de al menos 12 caracteres.",
           "Utilizar solo letras minúsculas.",
@@ -331,7 +331,7 @@
       },
       {
         "sessionId": 4,
- "question": "¿Por qué es importante evitar contraseñas basadas en palabras comunes o datos personales?",
+        "question": "¿Por qué es importante evitar contraseñas basadas en palabras comunes o datos personales?",
         "options": [
           "Son fácilmente adivinadas.",
           "Son difíciles de recordar.",
@@ -341,7 +341,7 @@
       },
       {
         "sessionId": 4,
- "question": "¿Cuál es una práctica recomendada al crear contraseñas sólidas?",
+        "question": "¿Cuál es una práctica recomendada al crear contraseñas sólidas?",
         "options": [
           "Utilizar frases de contraseña.",
           "Usar nombres de familiares en la contraseña.",
@@ -351,7 +351,7 @@
       },
       {
         "sessionId": 4,
- "question": "¿Por qué se recomienda evitar información personal en las contraseñas?",
+        "question": "¿Por qué se recomienda evitar información personal en las contraseñas?",
         "options": [
           "Para prevenir que otros adivinen fácilmente la contraseña.",
           "Para personalizar la contraseña.",
@@ -361,7 +361,7 @@
       },
       {
         "sessionId": 4,
- "question": "¿Cuál es un componente esencial de la creación de contraseñas sólidas?",
+        "question": "¿Cuál es un componente esencial de la creación de contraseñas sólidas?",
         "options": [
           "No utilizar la misma contraseña para múltiples cuentas.",
           "Cambiar la contraseña mensualmente.",
@@ -371,7 +371,7 @@
       },
       {
         "sessionId": 4,
- "question": "¿Cuál de las siguientes NO es una forma común de autenticación de dos factores?",
+        "question": "¿Cuál de las siguientes NO es una forma común de autenticación de dos factores?",
         "options": [
           "Una dirección de correo electrónico adicional.",
           "Un código de verificación en tiempo real.",
@@ -381,7 +381,7 @@
       },
       {
         "sessionId": 4,
- "question": "¿Qué ventaja ofrece un gestor de contraseñas en la generación de contraseñas?",
+        "question": "¿Qué ventaja ofrece un gestor de contraseñas en la generación de contraseñas?",
         "options": [
           "Puede crear contraseñas fuertes y aleatorias para cada cuenta.",
           "Puede almacenar contraseñas en texto sin formato.",
@@ -391,7 +391,7 @@
       },
       {
         "sessionId": 4,
- "question": "¿Por qué es importante que los gestores de contraseñas almacenen contraseñas de manera segura y cifrada?",
+        "question": "¿Por qué es importante que los gestores de contraseñas almacenen contraseñas de manera segura y cifrada?",
         "options": [
           "Para que sean inaccesibles para los atacantes.",
           "Para que sea más fácil para los atacantes acceder a las contraseñas.",
@@ -401,7 +401,7 @@
       },
       {
         "sessionId": 4,
- "question": "¿Qué función puede realizar un gestor de contraseñas para facilitar el acceso seguro?",
+        "question": "¿Qué función puede realizar un gestor de contraseñas para facilitar el acceso seguro?",
         "options": [
           "Autocompletar contraseñas en sitios web y aplicaciones.",
           "Almacenar contraseñas en papel.",
@@ -411,7 +411,7 @@
       },
       {
         "sessionId": 4,
- "question": "¿Por qué se recomienda utilizar un recordatorio para cambiar las contraseñas?",
+        "question": "¿Por qué se recomienda utilizar un recordatorio para cambiar las contraseñas?",
         "options": [
           "Para recordar cuándo es el momento de actualizar las contraseñas.",
           "Para olvidar completamente las contraseñas.",
@@ -428,7 +428,7 @@
     "questions": [
       {
         "sessionId": 5,
- "question": "¿Por qué es importante mantener actualizado el software?",
+        "question": "¿Por qué es importante mantener actualizado el software?",
         "options": [
           "Para garantizar la seguridad de tus dispositivos y datos.",
           "Para aumentar el rendimiento del software.",
@@ -438,7 +438,7 @@
       },
       {
         "sessionId": 5,
- "question": "¿Cuáles son los dos tipos principales de actualizaciones de software?",
+        "question": "¿Cuáles son los dos tipos principales de actualizaciones de software?",
         "options": [
           "Actualizaciones automáticas y manuales.",
           "Actualizaciones de alto riesgo y bajo riesgo.",
@@ -448,7 +448,7 @@
       },
       {
         "sessionId": 5,
- "question": "¿Cuál es la principal diferencia entre las actualizaciones automáticas y las manuales?",
+        "question": "¿Cuál es la principal diferencia entre las actualizaciones automáticas y las manuales?",
         "options": [
           "Las actualizaciones automáticas se instalan sin requerir la intervención del usuario, mientras que las actualizaciones manuales requieren la intervención del usuario.",
           "Las actualizaciones automáticas son opcionales, mientras que las actualizaciones manuales son obligatorias.",
@@ -458,7 +458,7 @@
       },
       {
         "sessionId": 5,
- "question": "¿Qué elementos necesitas mantener actualizados para mantener un entorno seguro?",
+        "question": "¿Qué elementos necesitas mantener actualizados para mantener un entorno seguro?",
         "options": [
           "Sistema operativo, navegadores web, aplicaciones y programas.",
           "Solo el sistema operativo.",
@@ -468,7 +468,7 @@
       },
       {
         "sessionId": 5,
- "question": "¿Qué son los parches de seguridad?",
+        "question": "¿Qué son los parches de seguridad?",
         "options": [
           "Actualizaciones específicas destinadas a corregir vulnerabilidades y agujeros de seguridad en el software existente.",
           "Actualizaciones generales del sistema operativo.",
@@ -478,7 +478,7 @@
       },
       {
         "sessionId": 5,
- "question": "¿Qué tipo de problemas se resuelven mediante parches de seguridad de navegadores?",
+        "question": "¿Qué tipo de problemas se resuelven mediante parches de seguridad de navegadores?",
         "options": [
           "Problemas de seguridad que podrían permitir la ejecución de código malicioso.",
           "Problemas de rendimiento de navegadores.",
@@ -488,7 +488,7 @@
       },
       {
         "sessionId": 5,
- "question": "¿Por qué son esenciales los parches de seguridad?",
+        "question": "¿Por qué son esenciales los parches de seguridad?",
         "options": [
           "Para cerrar vulnerabilidades y evitar ataques cibernéticos.",
           "Para mejorar el rendimiento del software.",
@@ -498,7 +498,7 @@
       },
       {
         "sessionId": 5,
- "question": "¿Qué deben hacer los desarrolladores de software en respuesta a amenazas conocidas o nuevas vulnerabilidades?",
+        "question": "¿Qué deben hacer los desarrolladores de software en respuesta a amenazas conocidas o nuevas vulnerabilidades?",
         "options": [
           "Lanzar parches de seguridad.",
           "Ignorar las amenazas y vulnerabilidades.",
@@ -508,7 +508,7 @@
       },
       {
         "sessionId": 5,
- "question": "¿Por qué es importante que tanto el sistema operativo como las aplicaciones estén siempre actualizados?",
+        "question": "¿Por qué es importante que tanto el sistema operativo como las aplicaciones estén siempre actualizados?",
         "options": [
           "Para protegerse contra amenazas en constante evolución.",
           "Para acelerar el rendimiento de los dispositivos.",
@@ -518,7 +518,7 @@
       },
       {
         "sessionId": 5,
- "question": "¿Cuál es el objetivo principal de los parches de seguridad?",
+        "question": "¿Cuál es el objetivo principal de los parches de seguridad?",
         "options": [
           "Cerrar brechas de seguridad y evitar ataques.",
           "Agregar nuevas características a las aplicaciones.",
@@ -535,7 +535,7 @@
     "questions": [
       {
         "sessionId": 6,
- "question": "¿Cuál es la función principal de un firewall?",
+        "question": "¿Cuál es la función principal de un firewall?",
         "options": [
           "Actuar como una barrera contra amenazas externas y filtrar tráfico no autorizado.",
           "Mejorar la velocidad de la conexión a Internet.",
@@ -545,7 +545,7 @@
       },
       {
         "sessionId": 6,
- "question": "¿Qué tipo de amenazas se dirigen comúnmente con el software antivirus?",
+        "question": "¿Qué tipo de amenazas se dirigen comúnmente con el software antivirus?",
         "options": [
           "Malware, incluyendo virus, gusanos, troyanos y spyware.",
           "Correo no deseado (spam).",
@@ -555,7 +555,7 @@
       },
       {
         "sessionId": 6,
- "question": "¿Qué proporciona el software antivirus además de escanear y eliminar malware?",
+        "question": "¿Qué proporciona el software antivirus además de escanear y eliminar malware?",
         "options": [
           "Protección en tiempo real al identificar y detener amenazas en el acto.",
           "Optimización del rendimiento del sistema.",
@@ -565,7 +565,7 @@
       },
       {
         "sessionId": 6,
- "question": "¿Qué indicador visual en la barra de direcciones de un navegador sugiere una conexión segura mediante HTTPS?",
+        "question": "¿Qué indicador visual en la barra de direcciones de un navegador sugiere una conexión segura mediante HTTPS?",
         "options": [
           "Un icono de candado.",
           "Un icono de impresora.",
@@ -575,7 +575,7 @@
       },
       {
         "sessionId": 6,
- "question": "¿Por qué se deben evitar las descargas de sitios de torrents o fuentes no verificadas?",
+        "question": "¿Por qué se deben evitar las descargas de sitios de torrents o fuentes no verificadas?",
         "options": [
           "Porque son especialmente riesgosas y pueden contener malware.",
           "Porque son la única fuente segura para obtener software.",
@@ -585,7 +585,7 @@
       },
       {
         "sessionId": 6,
- "question": "¿Qué medidas de seguridad se pueden aplicar a dispositivos móviles?",
+        "question": "¿Qué medidas de seguridad se pueden aplicar a dispositivos móviles?",
         "options": [
           "Actualizar el sistema operativo y habilitar el bloqueo de pantalla.",
           "Apagar los dispositivos móviles cuando no se usan.",
@@ -595,7 +595,7 @@
       },
       {
         "sessionId": 6,
- "question": "¿Por qué es importante descargar aplicaciones sólo desde fuentes confiables, como tiendas de aplicaciones oficiales?",
+        "question": "¿Por qué es importante descargar aplicaciones sólo desde fuentes confiables, como tiendas de aplicaciones oficiales?",
         "options": [
           "Para reducir el riesgo de instalar aplicaciones maliciosas.",
           "Porque las aplicaciones de fuentes no verificadas son gratuitas.",
@@ -605,7 +605,7 @@
       },
       {
         "sessionId": 6,
- "question": "¿Qué papel desempeña el cifrado en la protección de la privacidad en línea?",
+        "question": "¿Qué papel desempeña el cifrado en la protección de la privacidad en línea?",
         "options": [
           "El cifrado protege tus datos sensibles y las conexiones mediante HTTPS.",
           "El cifrado acelera la velocidad de navegación en línea.",
@@ -615,7 +615,7 @@
       },
       {
         "sessionId": 6,
- "question": "¿Por qué es importante verificar la identidad antes de compartir información sensible en línea?",
+        "question": "¿Por qué es importante verificar la identidad antes de compartir información sensible en línea?",
         "options": [
           "Para evitar la exposición de información a posibles estafadores.",
           "Para recibir premios y regalos en línea.",
@@ -625,7 +625,7 @@
       },
       {
         "sessionId": 6,
- "question": "¿Qué debes hacer si recibes un correo electrónico no solicitado con un enlace sospechoso?",
+        "question": "¿Qué debes hacer si recibes un correo electrónico no solicitado con un enlace sospechoso?",
         "options": [
           "No hagas clic en el enlace ni descargues archivos adjuntos.",
           "Haz clic en el enlace sin preocupaciones.",
@@ -635,7 +635,7 @@
       },
       {
         "sessionId": 6,
- "question": "¿Por qué es importante educarse y aumentar la conciencia sobre la ingeniería social?",
+        "question": "¿Por qué es importante educarse y aumentar la conciencia sobre la ingeniería social?",
         "options": [
           "Para reconocer y evitar tácticas de estafadores y protegerse contra ataques.",
           "Para ganar premios y regalos en línea.",
@@ -645,7 +645,7 @@
       },
       {
         "sessionId": 6,
- "question": "¿Qué medidas adicionales de seguridad son esenciales para la navegación segura en línea?",
+        "question": "¿Qué medidas adicionales de seguridad son esenciales para la navegación segura en línea?",
         "options": [
           "Utilizar conexiones seguras (HTTPS), evitar correos electrónicos sospechosos y cifrar datos sensibles.",
           "Compartir datos personales en línea con amigos y familiares.",

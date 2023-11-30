@@ -45,7 +45,6 @@ class _CoursesPageState extends State<CoursesPage> {
       body: ListView.builder(
         itemCount: buttonData.length,
         itemBuilder: (BuildContext context, int index) {
-          print(buttonData[index].text);
           return CourseButton(
             text: buttonData[index].text,
             onPressed: () {
@@ -53,7 +52,8 @@ class _CoursesPageState extends State<CoursesPage> {
                 context,
                 MaterialPageRoute(
                     builder: (context) => VideoPlayer(
-                      title: buttonData[index].text,
+                          idCourse: index,
+                          title: buttonData[index].text,
                           videoURL: buttonData[index].action,
                         )),
               );

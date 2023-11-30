@@ -2,11 +2,16 @@ import 'package:cybersafe_mx/utils/courseBtn_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
+import 'package:cybersafe_mx/pages/quiz_page.dart';
+
 class VideoPlayer extends StatefulWidget {
+  final int idCourse;
   final String videoURL;
   final String title;
+ 
   const VideoPlayer({
     super.key,
+    required this.idCourse,
     required this.videoURL,
     required this.title,
   });
@@ -53,7 +58,16 @@ class _VideoPlayerState extends State<VideoPlayer> {
         ),
         CourseButton(
           text: "Tomar examen",
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => QuizzPage(
+                          idCourse: widget.idCourse
+                        )),
+              );
+            
+          },
         ),
       ]),
     );
