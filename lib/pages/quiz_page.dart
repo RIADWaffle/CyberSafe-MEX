@@ -1,6 +1,7 @@
 import 'package:cybersafe_mx/models/quizzes_model.dart';
 
 import 'package:cybersafe_mx/main.dart';
+import 'package:cybersafe_mx/pages/courses_page.dart';
 
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -17,16 +18,19 @@ class QuizzPage extends StatefulWidget {
 
 class _QuizzPageState extends State<QuizzPage> {
   final _sectionsBox = Hive.box('sectionsBox');
+  final _questionsBox = Hive.box('questionsBox');
   CoursesDataBase db = CoursesDataBase();
   List<int?> selectedOptions = [];
   List questionsTmp = [];
 
   @override
   void initState() {
-    
+    print("quiz page enter");
     if (_sectionsBox.get("sectionsList") == null) {
       db.createInitialData();
+      db.updateDataBase();
     } else {
+      db.questionsFill();
       db.loadData();
     }
     questionsTmp = db.questions
@@ -34,7 +38,7 @@ class _QuizzPageState extends State<QuizzPage> {
         .toList();
     selectedOptions = List.filled(questionsTmp.length, null);
 
-    for(var answer in questionsTmp){
+    for (var answer in questionsTmp) {
       print(answer[3]);
     }
     super.initState();
@@ -42,12 +46,11 @@ class _QuizzPageState extends State<QuizzPage> {
 
   void updateSession(int idSection) {
     setState(() {
-      db.sections[idSection-1][2] = 1;
-      
+      db.sections[idSection - 1][2] = 1;
     });
     print(db.sections);
-    Navigator.of(context).pop();
     db.updateDataBase();
+    Navigator.of(context).pop();
   }
 
   void handleOptionSelected(int questionIndex, int selectedOption) {
@@ -75,14 +78,22 @@ class _QuizzPageState extends State<QuizzPage> {
         actions: [
           TextButton(
             onPressed: () {
-              if (percentage > 80) {
-                //updateSession(widget.idCourse);
-                db.sections[widget.idCourse-1][2] = 1;
-                db.sectionsCompleted++;
+              if (percentage >= 80) {
+                updateSession(widget.idCourse);
+                int counter = 0;
+                for (var section in db.sections) {
+                  if (section[2] == 1) {
+                    counter++;
+                  }
+                }
+                int sectionsCompleted = counter;
+
+                //db.sections[widget.idCourse-1][2] = 1;
+                //db.sectionsCompleted++;
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      'Congrats! You did well!\nSections Completed: ${db.sectionsCompleted}/${db.sections.length}',
+                      'Congrats! You did well!\nSections Completed: $sectionsCompleted}/${db.sections.length}',
                     ),
                   ),
                 );
@@ -93,8 +104,15 @@ class _QuizzPageState extends State<QuizzPage> {
                   ),
                 );
               }
-                  Navigator.of(context).pop();
-              if(db.sectionsCompleted>=db.sections.length){
+              Navigator.of(context).pop();
+              Navigator.of(context).pop();
+              Navigator.of(context).pop();
+              //avigator.of(context).pop();
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => CoursesPage()),
+              );
+              if (db.sectionsCompleted >= db.sections.length) {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(

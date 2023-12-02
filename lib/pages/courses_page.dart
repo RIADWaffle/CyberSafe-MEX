@@ -6,6 +6,8 @@ import 'package:cybersafe_mx/pages/videoPage.dart';
 import 'package:cybersafe_mx/utils/courseBtn_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:hive_flutter/hive_flutter.dart';
+import '../helper/database.dart';
 
 class CoursesPage extends StatefulWidget {
   const CoursesPage({super.key});
@@ -16,10 +18,15 @@ class CoursesPage extends StatefulWidget {
 
 class _CoursesPageState extends State<CoursesPage> {
   List<ButtonData> buttonData = [];
-
+final _sectionsBox = Hive.box('sectionsBox');
+final _questionsBox = Hive.box('questionsBox');
+  CoursesDataBase db = CoursesDataBase();
   @override
   void initState() {
     loadButtonDataFromJson();
+    print(_sectionsBox.get("sectionsList"));
+        print(_questionsBox.get("questionsList"));
+
     super.initState();
   }
 

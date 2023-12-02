@@ -17,7 +17,7 @@ class CoursesDataBase {
   // load the data from database
   void loadData() {
     sections = _sectionsBox.get("sectionsList");
-    questions = _questionsBox.get("questionList");
+    //questions = _questionsBox.get("questionList");
 
     int counter = 0;
     for (var section in sections) {
@@ -29,24 +29,7 @@ class CoursesDataBase {
     
   }
 
-  // update the database
-  void updateDataBase() {
-    _sectionsBox.put("sectionsList", sections);
-    sectionsCompleted = sections.where((section) => section[2] == 1).length;
-  }
-
-  // run this method if this is the 1st time ever opening this app
-  void createInitialData() async {
-
-    sections = [
-      [1, "Escenario de Phishing", 0],
-      [2, "Estafas Online", 0],
-      [3, "Identidad Personal", 0],
-      [4, "Importancia de contraseñas fuertes", 0],
-      [5, "Actualizacion regular del software", 0],
-      [6, "Medidas adicionales de seguridad", 0]
-    ];
-
+  void questionsFill(){
     questions = [
       [
         1,
@@ -643,37 +626,33 @@ class CoursesDataBase {
         0
       ],
     ];
+  }
+
+  // update the database
+  void updateDataBase() {
+    _sectionsBox.put("questionList", questions);
+    _sectionsBox.put("sectionsList", sections);
+    sectionsCompleted = sections.where((section) => section[2] == 1).length;
+  }
+
+  // run this method if this is the 1st time ever opening this app
+  void createInitialData() async {
+
+    sections = [
+      [1, "Escenario de Phishing", 0],
+      [2, "Estafas Online", 0],
+      [3, "Identidad Personal", 0],
+      [4, "Importancia de contraseñas fuertes", 0],
+      [5, "Actualizacion regular del software", 0],
+      [6, "Medidas adicionales de seguridad", 0]
+    ];
+
+    questionsFill();
+
+    
     //await _fetchProducts();
 
     //print(questions);
   }
-
-  // Future<void> _fetchProducts() async {
-  //   print("entro a fetch products");
-  //   String assetPath = 'lib/assets/JSON/security_questions.json';
-  //   String jsonString = await rootBundle.loadString(assetPath);
-
-  //   try {
-  //     List<dynamic> jsonData = json.decode(jsonString);
-
-  //     for (var sessionData in jsonData) {
-  //       List section = [];
-  //       section.add(sessionData['id']);
-  //       section.add(sessionData['sessionTitle']);
-  //       sections.add(section);
-
-  //       for (var questionData in sessionData['questions']) {
-  //         List question = [];
-  //         question.add(questionData['sessionId']);
-  //         question.add(questionData['question']);
-  //         question.add(questionData['options']);
-  //         question.add(questionData['correctAnswer']);
-
-  //         questions.add(question);
-  //       }
-  //     }
-  //   } catch (e) {
-  //     print('Error: $e');
-  //   }
-  // }
 }
+  
